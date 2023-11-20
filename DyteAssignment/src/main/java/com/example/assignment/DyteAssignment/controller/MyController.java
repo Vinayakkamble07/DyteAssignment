@@ -5,7 +5,6 @@ import com.example.assignment.DyteAssignment.repository.LogIngestorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -28,13 +27,6 @@ public class MyController {
         return ResponseEntity.ok(this.logIngestorRepository.findAll());
 
     }
-
-//    @GetMapping("/getAllLogs")
-//    public String getAllLogs(Model model) {
-//        List<LogIngestor> logs = logIngestorRepository.findAll();
-//        model.addAttribute("logs", logs);
-//        return "logs"; // Assuming the name of your HTML file is logs.html
-//    }
 
 
     @GetMapping("/getByMessage")
