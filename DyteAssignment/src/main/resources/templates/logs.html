@@ -1,0 +1,59 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--  &lt;!&ndash; Include any specific head content for this page if needed &ndash;&gt;-->
+<!--  &lt;!&ndash; ... &ndash;&gt;-->
+<!--</head>-->
+<!--<body>-->
+<!--&lt;!&ndash; Include the common navbar &ndash;&gt;-->
+<!--<div>-->
+<!--  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000; font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;">-->
+<!--    <div class="container-fluid">-->
+<!--      <a class="navbar-brand" href="#">Assignment</a>-->
+<!--      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--        <span class="navbar-toggler-icon"></span>-->
+<!--      </button>-->
+<!--      <div class="collapse navbar-collapse" id="navbarNav">-->
+<!--        <ul class="navbar-nav">-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link active" aria-current="page" th:href="@{/LogIngestor}">LogIngestor</a>-->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link" th:href="@{/features}">Features</a>-->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link" th:href="@{/pricing}">Pricing</a>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </nav>-->
+
+<!--</div>-->
+
+<!--<div class="container mt-4">-->
+<!--  <h2>Logs</h2>-->
+<!--  <table class="table table-striped">-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--      <th>Level</th>-->
+<!--      <th>Message</th>-->
+<!--      <th>Resource ID</th>-->
+<!--      <th>Timestamp</th>-->
+<!--      &lt;!&ndash; Add more table headers based on your LogIngestor fields &ndash;&gt;-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--    &lt;!&ndash; Iterate over the logs and generate table rows &ndash;&gt;-->
+<!--    <tr th:each="log : ${logs}">-->
+<!--      <td th:text="${log.level}"></td>-->
+<!--      <td th:text="${log.message}"></td>-->
+<!--      <td th:text="${log.resourceId}"></td>-->
+<!--      <td th:text="${log.timestamp}"></td>-->
+<!--      &lt;!&ndash; Add more table data based on your LogIngestor fields &ndash;&gt;-->
+<!--    </tr>-->
+<!--    </tbody>-->
+<!--  </table>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
